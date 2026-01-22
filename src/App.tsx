@@ -1,0 +1,28 @@
+import { useState } from 'react'
+
+// Componentes de Layout
+//import Header from './components/layout/Header'
+//import Footer from './components/layout/Footer'
+
+// Seções do Portfolio
+import Index from './components/pages/index'
+//import About from './components/pages/about'
+//import Projects from './components/pages/projects'
+//import Skills from './components/pages/Skills'
+//import Contact from './components/pages/contact'
+
+function App() {
+  return (
+    <div className="text-4xl bg-background h-full w-full">
+      {/* <Header /> */}
+      
+      <main>
+        <Index />
+      </main>
+      
+      {/* <Footer /> */}
+    </div>
+  )
+}
+
+export default App
