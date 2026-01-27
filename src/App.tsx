@@ -7,7 +7,7 @@ import { useState } from "react";
 import Index from "./components/pages/index";
 import Header from "./components/layout/Header";
 import About from './components/pages/about'
-//import Projects from './components/pages/projects'
+import Projects from './components/pages/projects'
 //import Skills from './components/pages/Skills'
 //import Contact from './components/pages/contact'
 
@@ -17,6 +17,7 @@ function App() {
       <Header />
       <Index />
       <About />
+      <Projects />
       {/* <Footer /> */}
     </div>
   );

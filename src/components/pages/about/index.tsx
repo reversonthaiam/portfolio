@@ -15,7 +15,7 @@ import nextJsLogo from "../../../assets/images/nextJsLogo.png";
 export default function About() {
   return (
     <>
-      <div className="flex items-center justify-center">
+      <div className="flex items-center justify-center mb-37.5">
         <div className="flex container justify-center gap-16">
           <div className="w-125">
             <img src={logoAboutMe} alt="logoAboutMe" />

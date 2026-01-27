@@ -1,5 +1,3 @@
-@import "tailwindcss";
-
 @font-face {
   font-family: 'Satoshi';
   src: url('./assets/fonts/Satoshi-Variable.ttf') format('truetype');
@@ -8,26 +6,31 @@
   font-style: normal;
 }
 
+@import "tailwindcss";
+
 @theme {
   --color-primary: #55E5A4;
   --color-background: #151C25;
   --color-text-light: #FFFFFF;
   --color-text-gray: #A9A9A9;
+  --color-card-gray: #26313F;
   --font-family-satoshi: 'Satoshi', sans-serif;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
-html {
-  scroll-behavior: smooth;
-}
+  html {
+    scroll-behavior: smooth;
+  }
 
-body {
-  font-family: var(--font-family-satoshi);
-  background-color: var(--color-background);
-  color: var(--color-text-light);
+  body {
+    font-family: var(--font-family-satoshi);
+    background-color: var(--color-background);
+    color: var(--color-text-light);
+  }
 }
