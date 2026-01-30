@@ -24,7 +24,7 @@ const projects = [
 export default function Projects() {
   return (
     <>
-      <div className="flex items-center justify-center flex-col">
+      <div id="projects" className="flex items-center justify-center flex-col">
         <h1 className="text-white font-medium text-5xl mb-12.5">Projects</h1>
         <div className="flex flex-row gap-16 mb-28">
           <button className="w-40 h-14 text-white bg-background text-2xl border-2 border-primary">
@@ -40,7 +40,7 @@ export default function Projects() {
         <div className="flex mb-32">
           <div className="grid grid-cols-2 gap-20">
             {projects.map((item) => (
-              <div className="flex flex-col items-center gap-4 w-141.25 h-157.5 rounded-2xl bg-card-gray">
+              <div className="flex flex-col items-center gap-4 w-141.25 h-157.5 rounded-md bg-card-gray">
                 <div className="w-full h-63.75">
                   <img src={projectImage1} alt="projectImage1" />
                 </div>

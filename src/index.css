@@ -34,3 +34,35 @@
     color: var(--color-text-light);
   }
 }
+
+
+/* SkillsWheel Animations */
+@keyframes wheel {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes reverse-wheel {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+.animate-wheel {
+  animation: wheel 50s linear infinite;
+}
+
+.animate-reverse-wheel {
+  animation: reverse-wheel 50s linear infinite;
+}
+
+.animation-paused {
+  animation-play-state: paused;
+}

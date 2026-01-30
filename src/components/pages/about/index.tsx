@@ -11,14 +11,15 @@ import nodeLogo from "../../../assets/images/nodeLogo.png";
 import mysqlLogo from "../../../assets/images/mysqlLogo.png";
 import vueJsLogo from "../../../assets/images/vueJsLogo.png";
 import nextJsLogo from "../../../assets/images/nextJsLogo.png";
+import { SkillsWheel } from "../../skillWheels";
 
 export default function About() {
   return (
     <>
-      <div className="flex items-center justify-center mb-37.5">
+      <div id="about" className="flex items-center justify-center mb-37.5">
         <div className="flex container justify-center gap-16">
-          <div className="w-125">
-            <img src={logoAboutMe} alt="logoAboutMe" />
+          <div className="min-h-screen flex items-center justify-center p-4">
+            <SkillsWheel />
           </div>
           <div className="flex flex-col w-150 gap-16">
             <div className="flex flex-col gap-6">

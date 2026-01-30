@@ -5,7 +5,7 @@ import availableIcon from "../../../assets/images/availableIcon.png";
 export default function Index() {
   return (
     <>
-      <div className="flex justify-center items-center h-220 gap-14">
+      <div className="flex justify-center items-center h-190 gap-14">
         <div className="flex flex-col w-148.5 gap-10">
           <div className="flex flex-col mb-10 gap-2">
             <h1 className="text-white text-2xl font-bold mb-2">
@@ -23,7 +23,7 @@ export default function Index() {
             </p>
           </div>
           <div className="flex items-center gap-12">
-            <button className="h-14 w-38 bg-primary rounded-2xl text-black text-2xl">
+            <button className="h-14 w-38 bg-primary rounded-md text-black text-2xl">
               Get in Touch
             </button>
             <div className="flex gap-2 items-center">

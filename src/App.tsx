@@ -8,8 +8,8 @@ import Index from "./components/pages/index";
 import Header from "./components/layout/Header";
 import About from './components/pages/about'
 import Projects from './components/pages/projects'
-//import Skills from './components/pages/Skills'
-//import Contact from './components/pages/contact'
+import Footer from './components/pages/footer'
+import Contact from './components/pages/contact'
 
 function App() {
   return (
@@ -18,7 +18,8 @@ function App() {
       <Index />
       <About />
       <Projects />
-      {/* <Footer /> */}
+      <Contact />
+      <Footer />
     </div>
   );
 }

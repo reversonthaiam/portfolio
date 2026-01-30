@@ -1,6 +1,6 @@
 import React from "react";
-import logoRT from "../../assets/images/logoRt.png"
-import changeColor from "../../assets/images/changeColor.png"
+import logoRT from "../../assets/images/logoRt.png";
+import changeColor from "../../assets/images/changeColor.png";
 
 export default function Header() {
   return (
@@ -10,9 +10,21 @@ export default function Header() {
           <img className="w-50" src={logoRT} alt="logo" />
         </div>
         <div className="flex gap-8">
-          <button className="h-14 w-32 bg-primary rounded-2xl text-black text-2xl" >About</button>
-          <button className="h-14 w-32 bg-primary rounded-2xl text-black text-2xl">Projects</button>
-          <button className="h-14 w-32 bg-primary rounded-2xl text-black text-2xl">Contact</button>
+          <a href="#about" rel="noopener noreferrer">
+            <button className="h-14 w-32 bg-primary rounded-md text-black text-2xl cursor-pointer">
+              About
+            </button>
+          </a>
+          <a href="#projects">
+            <button className="h-14 w-32 bg-primary rounded-md text-black text-2xl cursor-pointer">
+              Projects
+            </button>
+          </a>
+          <a href="#contact">
+            <button className="h-14 w-32 bg-primary rounded-md text-black text-2xl cursor-pointer">
+              Contact
+            </button>
+          </a>
         </div>
         <div>
           <img className="w-10" src={changeColor} alt="changeColor" />
