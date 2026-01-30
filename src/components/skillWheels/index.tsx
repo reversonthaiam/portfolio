@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { Modal } from "../modal";
 import { SkillCard } from "../skillCard";
 import type { Tech } from "../../types";

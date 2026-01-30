@@ -1,7 +1,5 @@
 'use client';
 
-import React from "react";
-
 interface SkillCardProps {
   imageURI: string;
   alt: string;
@@ -12,10 +10,10 @@ interface SkillCardProps {
 }
 
 export const SkillCard = ({ imageURI, alt, index, total, isPaused, onClick }: SkillCardProps) => {
-  // Calcula o angulo de rotacao baseado no index
+ 
   const angle = (360 / total) * index;
-  const radius = 200; // px - distancia do centro
-  const radiusMobile = 120; // px - distancia do centro em mobile
+  const radius = 200;
+  //const radiusMobile = 120; 
 
   return (
     <div

@@ -2,7 +2,6 @@ import type { Tech } from "../types";
 import ReactIcon from '../assets/images/reactIcon.png'
 import TypescriptIcon from '../assets/images/typescriptIcon.png'
 import JavascriptIcon from '../assets/images/javascriptLogo.png'
-import TailwindIcon from '../assets/images/tailwindLogo.png'
 import NodeIcon from '../assets/images/nodeLogo.png'
 import RubyIcon from '../assets/images/rubyLogo.png'
 import NextIcon from '../assets/images/nextJsLogo.png'

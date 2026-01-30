@@ -1,4 +1,3 @@
-import React from "react";
 import logoRT from "../../assets/images/logoRt.png";
 import changeColor from "../../assets/images/changeColor.png";
 

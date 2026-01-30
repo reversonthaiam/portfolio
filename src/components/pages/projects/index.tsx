@@ -1,4 +1,3 @@
-import React from "react";
 import projectImage1 from "../../../assets/images/projectImage1.png";
 import reactIcon from "../../../assets/images/reactIcon.png";
 

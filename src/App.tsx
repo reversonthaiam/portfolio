@@ -1,9 +1,3 @@
-import { useState } from "react";
-
-// Componentes de Layout
-//import Footer from './components/layout/Footer'
-
-// Seções do Portfolio
 import Index from "./components/pages/index";
 import Header from "./components/layout/Header";
 import About from './components/pages/about'

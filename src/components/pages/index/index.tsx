@@ -1,4 +1,3 @@
-import React from "react";
 import face from "../../../assets/images/face.png";
 import availableIcon from "../../../assets/images/availableIcon.png";
 

@@ -1,5 +1,3 @@
-import React from "react";
-import logoAboutMe from "../../../assets/images/logoAboutMe.png";
 import whoAmI from "../../../assets/images/whoAmI.png";
 import reactIcon from "../../../assets/images/reactIcon.png";
 import javascriptLogo from "../../../assets/images/javascriptLogo.png";
