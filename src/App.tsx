@@ -1,9 +1,9 @@
-import Index from "./components/pages/index";
+import Index from "./pages/index/index";
 import Header from "./components/layout/Header";
-import About from './components/pages/about'
-import Projects from './components/pages/projects'
-import Footer from './components/pages/footer'
-import Contact from './components/pages/contact'
+import About from './pages/about'
+import Projects from './pages/projects'
+import Footer from './pages/footer'
+import Contact from './pages/contact'
 
 function App() {
   return (

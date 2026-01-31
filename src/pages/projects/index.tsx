@@ -1,5 +1,5 @@
-import projectImage1 from "../../../assets/images/projectImage1.png";
-import reactIcon from "../../../assets/images/reactIcon.png";
+import projectImage1 from "../../assets/images/projectImage1.png";
+import reactIcon from "../../assets/images/reactIcon.png";
 
 const projects = [
   {
@@ -26,13 +26,13 @@ export default function Projects() {
       <div id="projects" className="flex items-center justify-center flex-col">
         <h1 className="text-white font-medium text-5xl mb-12.5">Projects</h1>
         <div className="flex flex-row gap-16 mb-28">
-          <button className="w-40 h-14 text-white bg-background text-2xl border-2 border-primary">
+          <button className="w-40 h-14 text-white bg-background text-2xl border-2 border-primary hover:opacity-80 transition cursor-pointer">
             All Projects
           </button>
-          <button className="w-40 h-14 text-white bg-background text-2xl border-2 border-primary">
+          <button className="w-40 h-14 text-white bg-background text-2xl border-2 border-primary hover:opacity-80 transition cursor-pointer">
             Frontend
           </button>
-          <button className="w-40 h-14 text-white bg-background text-2xl border-2 border-primary">
+          <button className="w-40 h-14 text-white bg-background text-2xl border-2 border-primary hover:opacity-80 transition cursor-pointer">
             Ruby on Rails
           </button>
         </div>
@@ -59,11 +59,11 @@ export default function Projects() {
                 </div>
 
                 <div className="flex flex-row gap-8">
-                  <button className="w-40 h-14 bg-primary text-black text-[18px] font-medium">
+                  <button className="w-40 h-14 bg-primary text-black text-[18px] font-medium hover:opacity-80 transition cursor-pointer">
                     View Live Demo
                   </button>
 
-                  <button className="w-40 h-14 border-2 border-white text-white text-[18px] font-medium">
+                  <button className="w-40 h-14 border-2 border-white text-white text-[18px] font-medium hover:opacity-80 transition cursor-pointer">
                     Visit Site
                   </button>
                 </div>
@@ -72,7 +72,7 @@ export default function Projects() {
           </div>
         </div>
 
-        <button className="w-40 h-14 bg-primary text-black text-[18px] font-medium mb-32">
+        <button className="w-40 h-14 bg-primary text-black text-[18px] font-medium mb-32 cursor-pointer hover:opacity-80 transition">
           View All Projects
         </button>
       </div>

@@ -1,6 +1,6 @@
-import IconeLogo from "../../../assets/images/logoRt.png";
-import githubIcon from "../../../assets/images/githubIcon.png";
-import linkedinIcon from "../../../assets/images/linkedinIcon.png";
+import IconeLogo from "../../assets/images/logoRt.png";
+import githubIcon from "../../assets/images/githubIcon.png";
+import linkedinIcon from "../../assets/images/linkedinIcon.png";
 
 export default function Footer() {
   const Divider = () => {

@@ -1,5 +1,5 @@
-import face from "../../../assets/images/face.png";
-import availableIcon from "../../../assets/images/availableIcon.png";
+import face from "../../assets/images/face.png";
+import availableIcon from "../../assets/images/availableIcon.png";
 
 export default function Index() {
   return (
@@ -22,11 +22,17 @@ export default function Index() {
             </p>
           </div>
           <div className="flex items-center gap-12">
-            <button className="h-14 w-38 bg-primary rounded-md text-black text-2xl">
-              Get in Touch
-            </button>
+            <a href="#contact">
+              <button className="h-14 w-38 bg-primary rounded-md text-black text-2xl cursor-pointer hover:opacity-80 transition">
+                Get in Touch
+              </button>
+            </a>
             <div className="flex gap-2 items-center">
-              <img src={availableIcon} className="w-5 h-5" alt="availableIcon" />
+              <img
+                src={availableIcon}
+                className="w-5 h-5"
+                alt="availableIcon"
+              />
               <p className="text-2xl text-text-gray">Available now</p>
             </div>
           </div>

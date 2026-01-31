@@ -1,15 +1,15 @@
-import whoAmI from "../../../assets/images/whoAmI.png";
-import reactIcon from "../../../assets/images/reactIcon.png";
-import javascriptLogo from "../../../assets/images/javascriptLogo.png";
-import tailwindLogo from "../../../assets/images/tailwindLogo.png";
-import htmlLogo from "../../../assets/images/htmlLogo.png";
-import cssLogo from "../../../assets/images/cssLogo.png";
-import rubyLogo from "../../../assets/images/rubyLogo.png";
-import nodeLogo from "../../../assets/images/nodeLogo.png";
-import mysqlLogo from "../../../assets/images/mysqlLogo.png";
-import vueJsLogo from "../../../assets/images/vueJsLogo.png";
-import nextJsLogo from "../../../assets/images/nextJsLogo.png";
-import { SkillsWheel } from "../../skillWheels";
+import whoAmI from "../../assets/images/whoAmI.png";
+import reactIcon from "../../assets/images/reactIcon.png";
+import javascriptLogo from "../../assets/images/javascriptLogo.png";
+import tailwindLogo from "../../assets/images/tailwindLogo.png";
+import htmlLogo from "../../assets/images/htmlLogo.png";
+import cssLogo from "../../assets/images/cssLogo.png";
+import rubyLogo from "../../assets/images/rubyLogo.png";
+import nodeLogo from "../../assets/images/nodeLogo.png";
+import mysqlLogo from "../../assets/images/mysqlLogo.png";
+import vueJsLogo from "../../assets/images/vueJsLogo.png";
+import nextJsLogo from "../../assets/images/nextJsLogo.png";
+import { SkillsWheel } from "../../components/skillWheels";
 
 export default function About() {
   return (
@@ -29,14 +29,31 @@ export default function About() {
                 </div>
               </div>
               <p className="text-justify text-text-gray text-2xl">
-                I am currently a master’s student in Applied Geoinformatics at
-                the University of Salzburg, Austria. I have a keen interest in
-                front-end and GIS development. My goal is to use my expertise in
-                building exciting and functional user interfaces. Additionally,
-                employ my geospatial analysis, modeling, and process automation
-                skills to engineer innovative, customizable, and sustainable
-                software solutions. The following are tech stacks that I use
-                regularly:
+                {/* I'm a Full Stack Developer with 4+ years of experience building
+                responsive web and mobile applications for international
+                clients. My journey began crafting user interfaces with React at
+                Rede Frota, evolved through engineering Ruby on Rails backends
+                and modern frontends at Fetchly Labs (US/EU), and now focuses on
+                full-stack JavaScript solutions with Node.js, React, and Vue.js
+                at Irancho. I specialize in transforming complex requirements
+                into intuitive interfaces—using Tailwind CSS and Styled
+                Components for pixel-perfect designs, and leveraging frameworks
+                like React Native for seamless cross-platform experiences. I
+                thrive in Agile environments where clean architecture meets
+                rapid iteration, and I'm passionate about writing maintainable
+                code that scales. When I'm not coding, I'm leveling up my
+                English skills to collaborate more effectively with global
+                teams—and always exploring new ways to bridge frontend elegance
+                with backend robustness. The following are tech stacks that I
+                use regularly: */}
+                I'm a Full Stack Developer with 5+ years of experience building
+                responsive web and mobile applications for international clients
+                across Brazil, the US. I craft intuitive interfaces
+                with React, Vue.js, and React Native, backed by robust Node.js
+                and Ruby on Rails systems. Passionate about clean architecture,
+                Agile collaboration, and code that scales—without sacrificing
+                user experience. The following are tech stacks that I
+                use regularly:
               </p>
               <div className="flex flex-col gap-4">
                 <div className="flex justify-around">
@@ -95,9 +112,11 @@ export default function About() {
               </div>
             </div>
             <div>
-              <button className="text-primary text-2xl border-4 w-55 h-14 ml-10">
-                Download Resume
-              </button>
+              <a href="/Reverson_Thaiam_resume.pdf" target="_blank">
+                <button className="text-primary text-2xl border-4 w-55 h-14 ml-10 cursor-pointer hover:opacity-80 transition">
+                  Download Resume
+                </button>
+              </a>
             </div>
           </div>
         </div>

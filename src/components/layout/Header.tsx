@@ -10,22 +10,22 @@ export default function Header() {
         </div>
         <div className="flex gap-8">
           <a href="#about" rel="noopener noreferrer">
-            <button className="h-14 w-32 bg-primary rounded-md text-black text-2xl cursor-pointer">
+            <button className="h-14 w-32 bg-primary rounded-md text-black text-2xl cursor-pointer hover:opacity-80 transition">
               About
             </button>
           </a>
           <a href="#projects">
-            <button className="h-14 w-32 bg-primary rounded-md text-black text-2xl cursor-pointer">
+            <button className="h-14 w-32 bg-primary rounded-md text-black text-2xl cursor-pointer hover:opacity-80 transition">
               Projects
             </button>
           </a>
           <a href="#contact">
-            <button className="h-14 w-32 bg-primary rounded-md text-black text-2xl cursor-pointer">
+            <button className="h-14 w-32 bg-primary rounded-md text-black text-2xl cursor-pointer hover:opacity-80 transition">
               Contact
             </button>
           </a>
         </div>
-        <div>
+        <div className="cursor-pointer hover:opacity-80 transition">
           <img className="w-10" src={changeColor} alt="changeColor" />
         </div>
       </div>
