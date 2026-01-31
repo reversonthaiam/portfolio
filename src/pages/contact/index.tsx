@@ -16,7 +16,8 @@ export default function Contact() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-
+    isSubmitting
+    
     try {
       await emailjs.send(
         "service_c7bgntk",
