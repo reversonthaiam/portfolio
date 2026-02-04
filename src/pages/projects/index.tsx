@@ -1,6 +1,6 @@
 import { useState } from "react";
 import projectImage1 from "../../assets/images/projectImage1.png";
-import reactIcon from "../../assets/images/reactIcon.png";
+import { TechIcon } from "../../components/techIcon";
 
 const projects = [
   {
@@ -18,7 +18,37 @@ const projects = [
     title: "Projeto de frontend",
     about:
       "Working closely with the ONORI-B team, I collaborated to ensure that the website not only met but exceeded their expectations.",
-    tecnologiesUsed: ["React", "Javascript"],
+    tecnologiesUsed: ["React", "Ruby on Rails"],
+    category: ["Frontend"],
+    link: "#",
+    image: "",
+  },
+  {
+    id: 3,
+    title: "Projeto de frontend",
+    about:
+      "Working closely with the ONORI-B team, I collaborated to ensure that the website not only met but exceeded their expectations.",
+    tecnologiesUsed: ["React", "Ruby on Rails"],
+    category: ["Frontend"],
+    link: "#",
+    image: "",
+  },
+  {
+    id: 4,
+    title: "Projeto de frontend",
+    about:
+      "Working closely with the ONORI-B team, I collaborated to ensure that the website not only met but exceeded their expectations.",
+    tecnologiesUsed: ["React", "Ruby on Rails"],
+    category: ["Frontend"],
+    link: "#",
+    image: "",
+  },
+  {
+    id: 5,
+    title: "Projeto de frontend",
+    about:
+      "Working closely with the ONORI-B team, I collaborated to ensure that the website not only met but exceeded their expectations.",
+    tecnologiesUsed: ["React", "Ruby on Rails"],
     category: ["Frontend"],
     link: "#",
     image: "",
@@ -28,7 +58,22 @@ const projects = [
 type ProjectFilter = "all Projects" | "Frontend" | "Ruby on Rails" | "none";
 
 export default function Projects() {
-  const [buttonSelected, setButtonSelected] = useState<ProjectFilter>("none");
+  const [buttonSelected, setButtonSelected] =
+    useState<ProjectFilter>("all Projects");
+  const [itemsToShow, setItemsToShow] = useState(2);
+
+  const filteredProjects = projects.filter(
+    (item) =>
+      buttonSelected === "all Projects" ||
+      item.category.includes(buttonSelected),
+  );
+
+  const displayedProjects = filteredProjects.slice(0, itemsToShow);
+  const hasMoreProjects = itemsToShow < filteredProjects.length;
+
+  const loadMore = () => {
+    setItemsToShow((prev) => prev + 2);
+  };
 
   return (
     <>
@@ -56,9 +101,10 @@ export default function Projects() {
         </div>
         <div className="flex mb-32">
           <div className="grid grid-cols-2 gap-20">
-            {projects.map(
+            {displayedProjects.map(
               (item) =>
-                (buttonSelected === "all Projects" || item.category.includes(buttonSelected)) && (
+                (buttonSelected === "all Projects" ||
+                  item.category.includes(buttonSelected)) && (
                   <div
                     key={item.id}
                     className="flex flex-col items-center gap-4 w-141.25 h-157.5 rounded-md bg-card-gray"
@@ -75,9 +121,9 @@ export default function Projects() {
                     <div className="flex items-center flex-col gap-3 mb-5">
                       <p>Technologies Used</p>
                       <div className="flex flex-row gap-4">
-                        <img className="w-10" src={reactIcon} alt="ReactIcon" />
-                        <img className="w-10" src={reactIcon} alt="ReactIcon" />
-                        <img className="w-10" src={reactIcon} alt="ReactIcon" />
+                        {item.tecnologiesUsed.map((tech, index) => (
+                          <TechIcon key={index} name={tech} />
+                        ))}
                       </div>
                     </div>
 
@@ -96,9 +142,16 @@ export default function Projects() {
           </div>
         </div>
 
-        <button className="w-40 h-14 bg-primary text-black text-[18px] font-medium mb-32 cursor-pointer hover:opacity-80 transition">
-          View All Projects
-        </button>
+        {hasMoreProjects && (
+          <div className="flex justify-center mt-12">
+            <button
+              onClick={loadMore}
+              className="w-40 h-14 bg-primary text-black text-[18px] font-medium mb-32 cursor-pointer hover:opacity-80 transition"
+            >
+              View All Projects
+            </button>
+          </div>
+        )}
       </div>
     </>
   );
