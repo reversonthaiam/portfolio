@@ -16,9 +16,7 @@ export default function Index() {
             <p className="text-justify">
               I specialize in crafting immersive user experiences using the
               latest frontend technologies and frameworks to bring your vision
-              to life. Additionally, my expertise extends to geoinformatics,
-              where I excel in harnessing the power of spatial data to uncover
-              actionable insights.
+              to life.
             </p>
           </div>
           <div className="flex items-center gap-12">

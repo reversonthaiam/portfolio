@@ -1,17 +1,18 @@
 import { useState } from "react";
 import projectImage1 from "../../assets/images/projectImage1.png";
 import { TechIcon } from "../../components/techIcon";
+import Spotify from "../../assets/images/spotify.png";
 
 const projects = [
   {
     id: 1,
-    title: "Projeto de Ruby",
+    title: "Spotify Copy",
     about:
-      "Working closely with the ONORI-B team, I collaborated to ensure that the website not only met but exceeded their expectations.",
-    tecnologiesUsed: ["React", "Javascript"],
-    category: ["Ruby on Rails"],
-    link: "#",
-    image: "",
+      "It’s a Spotify clone — one of my first projects, built with React and CSS. It’s responsive as well, so feel free to check it out!",
+    tecnologiesUsed: ["React", "CSS"],
+    category: ["Frontend"],
+    link: "https://projetospotify.vercel.app/",
+    image: Spotify,
   },
   {
     id: 2,
@@ -110,7 +111,7 @@ export default function Projects() {
                     className="flex flex-col items-center gap-4 w-141.25 h-157.5 rounded-md bg-card-gray"
                   >
                     <div className="w-full h-63.75">
-                      <img src={projectImage1} alt="projectImage1" />
+                      <img src={item.image} alt="projectImage1" />
                     </div>
                     <div className="text-white text-5xl font-bold">
                       {item.title}
@@ -128,13 +129,17 @@ export default function Projects() {
                     </div>
 
                     <div className="flex flex-row gap-8">
-                      <button className="w-40 h-14 bg-primary text-black text-[18px] font-medium hover:opacity-80 transition cursor-pointer">
-                        View Live Demo
-                      </button>
+                      <a href={item.link} target="_blank">
+                        <button className="w-40 h-14 bg-primary text-black text-[18px] font-medium hover:opacity-80 transition cursor-pointer">
+                          View Live Demo
+                        </button>
+                      </a>
 
-                      <button className="w-40 h-14 border-2 border-white text-white text-[18px] font-medium hover:opacity-80 transition cursor-pointer">
-                        Visit Site
-                      </button>
+                      <a href={item.link} target="_blank">
+                        <button className="w-40 h-14 bg-primary text-black text-[18px] font-medium hover:opacity-80 transition cursor-pointer">
+                          Visit Site
+                        </button>
+                      </a>
                     </div>
                   </div>
                 ),

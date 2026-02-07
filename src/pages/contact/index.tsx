@@ -6,7 +6,6 @@ import { ModalGeneric } from "../../components/modalGeneric";
 export default function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [showSuccessModal, setShowSuccessModal] = useState(false);
-
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -184,8 +183,9 @@ export default function Contact() {
                     </div>
 
                     <button
+                      disabled={isSubmitting}
                       type="submit"
-                      className="flex items-center justify-center rounded-md w-full h-12 text-base font-medium bg-primary cursor-pointer hover:opacity-80 transition"
+                      className={`${isSubmitting ? "opacity-30" : "hover:opacity-80"} + flex items-center justify-center rounded-md w-full h-12 text-base font-medium bg-primary cursor-pointer hover:opacity-80 transition`}
                     >
                       <Send size={18} className="mr-2" />
                       Send message
