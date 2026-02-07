@@ -16,44 +16,44 @@ const projects = [
   },
   {
     id: 2,
-    title: "Projeto de frontend",
+    title: "Social Blog",
     about:
-      "Working closely with the ONORI-B team, I collaborated to ensure that the website not only met but exceeded their expectations.",
-    tecnologiesUsed: ["React", "Ruby on Rails"],
-    category: ["Frontend"],
-    link: "#",
+      "Building a social media application with posts, user connections, and authentication, with security best practices in place. Still a work in progress.",
+    tecnologiesUsed: ["Ruby on Rails", "Tailwind"],
+    category: ["Frontend", "Ruby on Rails"],
+    link: "https://sample-app-rose.vercel.app/",
     image: "",
   },
-  {
-    id: 3,
-    title: "Projeto de frontend",
-    about:
-      "Working closely with the ONORI-B team, I collaborated to ensure that the website not only met but exceeded their expectations.",
-    tecnologiesUsed: ["React", "Ruby on Rails"],
-    category: ["Frontend"],
-    link: "#",
-    image: "",
-  },
-  {
-    id: 4,
-    title: "Projeto de frontend",
-    about:
-      "Working closely with the ONORI-B team, I collaborated to ensure that the website not only met but exceeded their expectations.",
-    tecnologiesUsed: ["React", "Ruby on Rails"],
-    category: ["Frontend"],
-    link: "#",
-    image: "",
-  },
-  {
-    id: 5,
-    title: "Projeto de frontend",
-    about:
-      "Working closely with the ONORI-B team, I collaborated to ensure that the website not only met but exceeded their expectations.",
-    tecnologiesUsed: ["React", "Ruby on Rails"],
-    category: ["Frontend"],
-    link: "#",
-    image: "",
-  },
+  // {
+  //   id: 3,
+  //   title: "Projeto de frontend",
+  //   about:
+  //     "Working closely with the ONORI-B team, I collaborated to ensure that the website not only met but exceeded their expectations.",
+  //   tecnologiesUsed: ["React", "Ruby on Rails"],
+  //   category: ["Frontend"],
+  //   link: "#",
+  //   image: "",
+  // },
+  // {
+  //   id: 4,
+  //   title: "Projeto de frontend",
+  //   about:
+  //     "Working closely with the ONORI-B team, I collaborated to ensure that the website not only met but exceeded their expectations.",
+  //   tecnologiesUsed: ["React", "Ruby on Rails"],
+  //   category: ["Frontend"],
+  //   link: "#",
+  //   image: "",
+  // },
+  // {
+  //   id: 5,
+  //   title: "Projeto de frontend",
+  //   about:
+  //     "Working closely with the ONORI-B team, I collaborated to ensure that the website not only met but exceeded their expectations.",
+  //   tecnologiesUsed: ["React", "Ruby on Rails"],
+  //   category: ["Frontend"],
+  //   link: "#",
+  //   image: "",
+  // },
 ];
 
 type ProjectFilter = "all Projects" | "Frontend" | "Ruby on Rails" | "none";
