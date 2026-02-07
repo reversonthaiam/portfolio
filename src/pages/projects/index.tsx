@@ -1,5 +1,4 @@
 import { useState } from "react";
-import projectImage1 from "../../assets/images/projectImage1.png";
 import { TechIcon } from "../../components/techIcon";
 import Spotify from "../../assets/images/spotify.png";
 
